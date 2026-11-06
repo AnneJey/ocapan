@@ -1,52 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jianne Mae Ocapan E-Portfolio</title>
-
-  <!-- Connection 1: External CSS Link -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Connection 2: External JavaScript Link -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jianne Mae L. Ocapan | E‑Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Decorative sky layers -->
+  <div class="sky-scene" aria-hidden="true">
+    <!-- Light Mode Elements -->
+    <div class="sun"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="cloud cloud-4"></div>
 
-  <header>
-    <nav>
-      <h2>Jianne Mae L. Ocapan E-Portfolio</h2>
-      <!-- Dynamic Target 1: Dark Mode Toggle -->
-      <button id="theme-btn">Toggle Dark Mode</button>
-    </nav>
-  </header>
+    <!-- Dark Mode Elements -->
+    <div class="galaxy"></div>
+    <div class="moon"></div>
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star second"></div>
+    <div class="shooting-star third"></div>
+  </div>
 
-  <main>
-    <section id="hero">
-      <h1>Welcome to My E-Portfolio</h1>
-      <p>1st Year Information Technology Student</p>
+  <div class="container">
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="portfolio-header">
+      <div class="logo">Jianne Mae L. Ocapan</div>
+      
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="theme-btn" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <div class="hero">
+      <div class="profile-picture">
+        <img src="profile.jpg" alt="Jianne Mae L. Ocapan">
+      </div>
+
+      <div class="hero-badge">✨ welcome to my space</div>
+      <h1>Hi, I'm Jianne Mae L. Ocapan</h1>
+      <div class="subtitle">BS Information Technology Student</div>
+      <p class="hero-desc">
+        A creative explorer passionate about art, animation, and technology —
+        always chasing the next curious thing.
+      </p>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <h2>📌 Introduction</h2>
+      <p>
+        Hello there! I'm Jianne Mae L. Ocapan, 
+        a first-year <stong>Bachelor of Science in Information Technology</strong> student 
+        at the <strong>University of Immaculate Conception.</strong>
+      </p>
+      <p>
+        I'm someone who is curious, open-minded, and always eager to discover something new. 
+        I enjoy exploring different experiences, learning along the way, and finding new ways to express myself. 
+        Like everyone else, I'm still figuring things out, discovering my strengths, and growing through every opportunity that comes my way.
+      </p>
+      <p>
+        This e-portfolio serves as a little introduction to who I am, my experiences,
+        and the things that make up my journey as a student.
+        <strong>Thank you for stopping by, and welcome to my e-portfolio!</strong>
+      </p>
     </section>
 
+    <!-- ===== HOBBIES + INTERESTS ===== -->
+    <div class="grid-2" id="skills">
+      <section class="tilt-left">
+        <h2>🎨 Hobbies</h2>
+        <ul class="styled-list">
+          <li>Watching movies and TV shows</li>
+          <li>Listening to music</li>
+          <li>Reading books and interesting stories</li>
+          <li>Creating traditional and digital art</li>
+          <li>Making private animations</li>
+        </ul>
+      </section>
+
+      <section class="tilt-right">
+        <h2>💡 Interests</h2>
+        <ul class="styled-list">
+          <li>Digital Art and Illustration</li>
+          <li>Animation and Creative Design</li>
+          <li>Web Design and Development</li>
+          <li>Java Programming</li>
+          <li>Technology and Computers</li>
+          <li>Exploring new creative tools and skills</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ===== PROJECTS ===== -->
     <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="card">
-        <h3>Web Integration Lab</h3>
-        <p>A demonstration of linking HTML, CSS, and JS.</p>
+      <h2>💻 Projects</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h4>Web Integration Lab</h4>
+          <p>
+            A demonstration of how HTML, CSS, and JavaScript work together to create
+            interactive and visually appealing web pages. This e-portfolio is also part
+            of my journey in learning web development and applying my skills.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Byte Me — Net Cafe System</h4>
+          <p>
+            A Java-based command-line Net Cafe Management System designed to manage
+            computer sessions, customers, payments, and inventory. It features Admin,
+            Manager, Staff, and Customer roles, with text files used for data storage.
+          </p>
+        </div>
       </div>
     </section>
 
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <!-- Dynamic Target 2: Interactive Alert Button -->
-      <button id="contact-btn">Get in Touch</button>
+    <!-- ===== EDUCATION ===== -->
+    <section id="education">
+      <h2>🎓 Education</h2>
+      <div class="edu-item">
+        <strong>University of Immaculate Conception</strong> 
+        <span>Bachelor of Science in Information Technology – 1st Year</span>
+      </div>
+      <div class="edu-item">
+        <strong>Davao City National High School</strong>
+        <span>Senior High</span>
+      </div>
+      <div class="edu-item">
+        <strong>Davao City National High School</strong>
+        <span>Junior High</span>
+      </div>
+      <div class="edu-item">
+        <strong>Fil-Asian Mission Academy</strong>
+        <span>Elementary</span>
+      </div>
     </section>
-  </main>
 
-  <footer>
-    <!-- Dynamic Target 3: Year Injection -->
-    <p>&copy; <span id="year"></span> All Rights Reserved.</p>
-  </footer>
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements">
+      <h2>🏆 Achievements</h2>
+      <ul class="achievement-list">
+        <li>
+          <strong>Anti-Vaping Awareness Campaign</strong> — Participated in promoting
+          awareness about the harmful effects of vaping and encouraging students to
+          make healthier lifestyle choices.
+        </li>
+        <li>
+          <strong>1st Runner-Up – Football</strong> — Recognized as part of a team that
+          achieved first runner-up in a football competition through teamwork,
+          dedication, and sportsmanship.
+        </li>
+        <li>
+          <strong>1st Runner-Up – Cheerdance</strong> — Achieved first runner-up in a
+          cheerdance competition, showcasing teamwork, coordination, creativity, and
+          performance skills.
+        </li>
+      </ul>
+    </section>
 
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <h2>📬 Get In Touch</h2>
+      <div class="contact-card">
+        <p>Feel free to reach out — just send me an email!</p>
+        <a href="mailto:jocapan_260000000724@uic.edu.ph" class="email-btn" id="contact-btn">
+          jocapan_260000000724@uic.edu.ph
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>© 2026 Jianne Mae L. Ocapan. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
